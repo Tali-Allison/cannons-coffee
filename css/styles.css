@@ -137,3 +137,28 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+
+nav a {
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.parent-text a {
+  background: #209d5c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card a {
+  margin-top: 10px;
+  background: #06327d;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
