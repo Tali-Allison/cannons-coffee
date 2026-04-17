@@ -1,5 +1,3 @@
-console.log("hello");
-
 const container = document.querySelector(".container");
 const form = document.getElementById("form");
 
