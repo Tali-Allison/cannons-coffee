@@ -13,42 +13,35 @@
 <header class="top">
 
   <div class="logo">
-
     <img src="https://assets.codepen.io/296057/logo-nav.png" alt="Cannons Coffee Logo">
-
     <h1>CANNONS COFFEE</h1>
-
   </div>
 
   <nav>
-
     <ul>
-
       <li><a href="index.html">Home</a></li>
-          <li><a href="latte.html">Latte</a></li>
+      <li><a href="latte.html">Latte</a></li>
       <li><a href="https://www.starbucks.com/menu" target="_blank">About</a></li>
-
       <li><a href="mailto:alexis.langager.remote@gmail.com" target="_blank">Contact</a></li>
       <li><a href="login.html">Login</a></li>
       <li><a href="inquiry.html">Inquiry</a></li>
-
     </ul>
-
   </nav>
 
 </header>
 
 <main>
+
   <form id="form">
-    <h1>Inquiry Form</h1><br>
+
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name" placeholder="type here" required><br><br>
 
     <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email" placeholder="type here" required><br><br>
+    <input type="email" id="email" name="email" placeholder="type here" required><br><br>
 
-    <label for="phonenumber">Phone Number:</label><br>
-    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="type here" required><br><br>
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="type here" required><br><br>
 
     <label for="comments">Comments:</label><br>
     <textarea id="comments" name="comments" rows="4" cols="40" placeholder="type here"></textarea><br><br>
@@ -56,31 +49,36 @@
     <label for="coffeeFlavor">Choose a Coffee Flavor:</label><br>
     <select id="coffeeFlavor" name="coffeeFlavor">
       <option value="">Select a Flavor</option>
-      <option value="original">Original ☕️ </option>
-      <option value="iced carmel">Iced Carmel 🧋</option>
+      <option value="original">Original ☕️</option>
+      <option value="iced caramel">Iced Caramel 🧋</option>
       <option value="pumpkin spice">Pumpkin Spice 🎃</option>
     </select><br><br>
 
-    <div class="interest" name="interest">
+    <fieldset class="interest">
       <legend>Are you interested in:</legend><br>
-      <label><input type="radio" name="interest" value="buying coffee">Buying Coffee</label><br><br>
-      <label><input type="radio" name="interest" value="employment">Employment</label><br><br>
-    </div>
+
+      <label>
+        <input type="radio" name="interest" value="buying coffee">
+        Buying Coffee
+      </label><br><br>
+
+      <label>
+        <input type="radio" name="interest" value="employment">
+        Employment
+      </label>
+    </fieldset>
 
     <button type="submit">Submit</button>
 
   </form>
-  <div class="container">
 
-  </div>
+  <div class="container"></div>
+
 </main>
 
 <footer>
-
   <img src="https://assets.codepen.io/296057/logo-footer.png" alt="logo">
-
   <p>© 2026 Cannons Coffee. All Rights Reserved.</p>
-
 </footer>
 <script src="js/inquiry.js"></script>
 </body>

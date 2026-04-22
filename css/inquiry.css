@@ -43,66 +43,6 @@ nav li a:hover {
     color: black;
 }
 
-.parent {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    color: black;
-    border-top: 5px solid #ffd034;
-}
-
-.parent img {
-    width: 100%;
-}
-
-.parent-text {
-    padding: 20px;
-}
-
-.parent-text button {
-    background: #209d5c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-}
-
-.coffee {
-    background: #cadbf8;
-    color: black;
-    padding: 20px;
-    border-bottom: 5px solid #ffd034;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card button {
-    margin-top: 10px;
-    background: #06327d;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-}
-
-footer img {
-    width: 250px;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -110,45 +50,6 @@ a {
 
 a:hover {
     background-color: #06327d;
-}
-
-@media (min-width: 600px) {
-    .top {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    nav ul {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .parent {
-        flex-direction: row;
-    }
-
-    .parent img {
-        width: 50%;
-    }
-
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 900px) {
-    .top {
-        padding: 20px 40px;
-    }
-
-    .parent-text {
-        padding: 50px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
 
 form {
@@ -173,7 +74,6 @@ form textarea,
 form select {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-family: Poppins, sans-serif;
@@ -187,15 +87,27 @@ form select:focus {
     border: 1px solid #06327d;
 }
 
-.interest {
+fieldset.interest {
     background: #cadbf8;
     padding: 15px;
     border-radius: 8px;
     border-left: 5px solid #ffd034;
+    margin-top: 10px;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .interest label {
     font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+input[type="radio"] {
+    width: auto;
 }
 
 form button {
@@ -207,6 +119,7 @@ form button {
     padding: 12px;
     border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 form button:hover {
@@ -223,4 +136,32 @@ form button:hover {
     border-radius: 10px;
     border-left: 6px solid #209d5c;
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+footer img {
+    width: 250px;
+}
+
+@media (min-width: 600px) {
+    .top {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .top {
+        padding: 20px 40px;
+    }
 }

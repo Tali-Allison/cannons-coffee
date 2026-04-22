@@ -151,43 +151,76 @@ a:hover {
     }
 }
 
-.form-box {
+form {
     background: white;
     color: black;
-    max-width: 400px;
+    max-width: 500px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 12px;
     border-top: 6px solid #ffd034;
     box-shadow: 0 10px 25px black;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
-.form-box input {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+form label,
+form legend {
+    font-weight: bold;
     font-size: 14px;
 }
 
-.form-box input:focus {
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
     outline: none;
     border: 1px solid #06327d;
 }
 
-.form-box button {
-    margin-top: 10px;
+.interest {
+    background: #cadbf8;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ffd034;
+}
+
+.interest label {
+    font-weight: normal;
+}
+
+form button {
+    margin-top: 15px;
+    width: 100%;
     background: #06327d;
     color: white;
     border: none;
     padding: 12px;
     border-radius: 6px;
+    font-size: 16px;
 }
 
-.form-box button:hover {
+form button:hover {
     background: #ffd034;
     color: black;
+}
+
+.container p {
+    background: white;
+    color: black;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #209d5c;
+    text-align: center;
 }
