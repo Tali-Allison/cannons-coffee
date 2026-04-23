@@ -4,71 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | Cannons Coffee</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-<header class="top">
+    <header class="top">
 
-    <div class="logo">
+        <div class="logo">
+            <img src="https://assets.codepen.io/296057/logo-nav.png" alt="Cannons Coffee Logo">
+            <h1>CANNONS COFFEE</h1>
+        </div>
 
-        <img src="https://assets.codepen.io/296057/logo-nav.png" alt="Cannons Coffee Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="latte.html">Latte</a></li>
+                <li><a href="https://www.starbucks.com/menu" target="_blank">About</a></li>
+                <li><a href="mailto:alexis.langager.remote@gmail.com" target="_blank">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="inquiry.html">Inquiry</a></li>
+            </ul>
+        </nav>
 
-        <h1>CANNONS COFFEE</h1>
+    </header>
 
-    </div>
+    <main>
+        <form id="form" class="form-box">
 
-    <nav>
+            <h1>Login</h1><br>
 
-        <ul>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="type here" required>
 
-            <li><a href="index.html">Home</a></li>
-                <li><a href="latte.html">Latte</a></li>
-            <li><a href="https://www.starbucks.com/menu" target="_blank">About</a></li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="type here" required>
 
-            <li><a href="mailto:alexis.langager.remote@gmail.com" target="_blank">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="inquiry.html">Inquiry</a></li>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="your password" required>
 
-        </ul>
+            <button type="submit">Submit</button>
 
-    </nav>
+        </form>
+    </main>
 
-</header>
+    <div class="container"></div>
 
-<main>
+    <footer>
+        <img src="https://assets.codepen.io/296057/logo-footer.png" alt="logo">
+        <p>© 2026 Cannons Coffee. All Rights Reserved.</p>
+    </footer>
 
-
-    <form id="form" class="form-box">
-
-        <h1>Login</h1><br>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="type here" required>
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="type here" required>
-
-        <label for="password">Password:</label>
-        <input type="text" id="password" name="password" placeholder="your password" required>
-
-        <button type="submit">Submit</button>
-
-    </form>
-
-</main>
-
-<div class="container">
-</div>
-
-<footer>
-
-    <img src="https://assets.codepen.io/296057/logo-footer.png" alt="logo">
-
-    <p>© 2026 Cannons Coffee. All Rights Reserved.</p>
-
-</footer>
-<script src="js/custom-login.js"></script>
+    <script src="js/custom-login.js"></script>
 </body>
 
 </html>

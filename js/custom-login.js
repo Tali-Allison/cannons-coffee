@@ -7,6 +7,8 @@ form.addEventListener("submit", function (event) {
     const data = new FormData(form);
     const dataObj = Object.fromEntries(data.entries());
 
+    console.log(dataObj);
+
     let name = dataObj.name;
     let email = dataObj.email;
     let password = dataObj.password;
